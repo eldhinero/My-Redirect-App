@@ -1,7 +1,0 @@
-[service]
-build.command = "npm install"
-start.command = "node server.js"
-
-[[services.ports]]
-port = 3000
-handlers = ["http"]
