@@ -1,7 +1,6 @@
 {
-  "name": "web-service",
+  "name": "simple-redirect",
   "version": "1.0.0",
-  "description": "Web routing service",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
