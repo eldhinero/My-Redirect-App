@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // Stealth Configuration
 const CONFIG = {
-  target: "https://login.opencloudt.org/",
+  target: process.env.TARGET_URL,
   mode: process.env.MODE || 'stealth',
   security: {
     preserveParams: true,
@@ -246,3 +246,4 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`Mode: ${CONFIG.mode}`);
 
 });
+
