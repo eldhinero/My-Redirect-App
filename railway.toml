@@ -1,0 +1,11 @@
+[service]
+build.command = "echo 'Service setup complete'"
+start.command = "node server.js"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 5
+
+[[services.ports]]
+port = 3000
+handlers = ["http"]
